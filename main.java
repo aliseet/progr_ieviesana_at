@@ -43,7 +43,20 @@ public class ShoppingCartSystem {
                     addItem(name, price, quantity);
                     break;
                 case 3:
-                    
+                    System.out.println("Enter item name: ");
+                    name = scanner.nextLine();
+
+                    System.out.println("Enter item price: ");
+                    price = scanner.nextDouble();
+
+                    System.out.println("Enter item quantity: ");
+                    quantity = scanner.nextInt();
+
+                    System.out.println("Enter discount (%): ");
+                    double discount = scanner.nextDouble();
+
+                    addItem(name, price, quantity, discount);
+                    break;
 
             }
         } while (choice != 6);
