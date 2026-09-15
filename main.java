@@ -6,5 +6,7 @@ public class ShoppingCartSystem {
     static int choice;
     public ArrayList<Item> cart = new ArrayList<>();
 
-    
+    public static void main(String[] args) {
+        
+    }
 }
