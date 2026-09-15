@@ -30,6 +30,7 @@ public class ShoppingCartSystem {
 
                     addItem(name, price);
                     break;
+                case 2:
 
             }
         } while (choice != 6);
