@@ -21,6 +21,15 @@ public class ShoppingCartSystem {
 
             switch (choice) {
                 case 1:
+                    System.out.println("Enter item name: ");
+                    String name = scanner.nextLine();
+
+                    System.out.println("Enter item price: ");
+                    double price = scanner.nextDouble();
+                    scanner.nextLine();
+
+                    addItem(name, price);
+                    break;
 
             }
         } while (choice != 6);
