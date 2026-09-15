@@ -18,6 +18,10 @@ public class ShoppingCartSystem {
             System.out.println("\nEnter an option; ");
             choice = scanner.nextInt();
             scanner.nextLine();
+
+            switch (choice) {
+                
+            }
         } while (choice != 6);
     }
 }
