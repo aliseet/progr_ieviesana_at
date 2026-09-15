@@ -74,12 +74,16 @@ public class ShoppingCartSystem {
         } while (choice != 6);
     }
 
+    // Šis ir kā viens produkts produktu grozā
     static class Item {
+
+        // Saglabā produkta informāciju
         String name;
         double price;
         int quantity;
         double discount;
 
+        // Izveido produktu ar nosaukumu, cenu, daudzumu un atlaidi
         Item(String name, double price, int quantity, double discount) {
             this.name = name;
             this.price = price;
@@ -87,6 +91,7 @@ public class ShoppingCartSystem {
             this.discount = discount;
         }
 
+        // Aprēķina galējo cenu, pievienojot atlaidi
         public double getTotalPrice() {
             return (price * quantity) * (1 - discount/100);
         }
