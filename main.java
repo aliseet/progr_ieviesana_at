@@ -25,7 +25,10 @@ public class ShoppingCartSystem {
         } while (choice != 6);
 
         static class Item {
-            
+            String name;
+            double price;
+            int quantity;
+            double discount;
         }
     }
 }
