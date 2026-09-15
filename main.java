@@ -57,6 +57,9 @@ public class ShoppingCartSystem {
 
                     addItem(name, price, quantity, discount);
                     break;
+                case 4:
+                    viewCart();
+                    break;
 
             }
         } while (choice != 6);
