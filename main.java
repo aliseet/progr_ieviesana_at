@@ -3,10 +3,11 @@ import java.util.Scanner;
 
 public class ShoppingCartSystem {
     public static Scanner scanner = new Scanner(System.in);
-    static int choice;
-    public static ArrayList<Item> cart = new ArrayList<>();
+    static int choice; // Saglabā lietotāja izvēli izvēlnē
+    public static ArrayList<Item> cart = new ArrayList<>(); // ArrayList kurš satur produktus kuri tiek pievienoti grozam
 
     public static void main(String[] args) {
+        // Atkārtoti parāda izvēlni kamēr lietotājs izvēlas
         do {
             System.out.println("Shopping Cart System:");
             System.out.println("1. Add Item (Name, Price)");
