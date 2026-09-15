@@ -71,5 +71,13 @@ public class ShoppingCartSystem {
                 }
             }
         }
+
+        public static double calculateTotalPrice() {
+            double totalPrice = 0;
+            for (Item item : cart) {
+                totalPrice += item.getTotalPrice();
+            }
+            return totalPrice;
+        }
     }
 }
