@@ -63,6 +63,12 @@ public class ShoppingCartSystem {
         public static void viewCart() {
             if (cart.isEmpty()) {
                 System.out.println("No items added to cart.");
+            } else {
+                System.out.println("\nItems in cart: ");
+                for (int = x; x < cart.size(); x++) {
+                    Item item = cart.get(x);
+                    System.out.println((x + 1) + ". " + "Item added: " + item.name + ", " + "Price: " + item.price + "$, " + "Quantity: " + item.quantity + ", " + "Discount: " + item.discount + "\n");
+                }
             }
         }
     }
