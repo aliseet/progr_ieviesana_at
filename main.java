@@ -53,5 +53,11 @@ public class ShoppingCartSystem {
             cart.add(item);
             System.out.println("\n Item added: " + item.name + ", " + "Quantity: " + item.quantity + ", " + "Discount: " + item.discount + "%\n");
         }
+
+        public static void addItem(String name, double price, int quantity, double discount) {
+            Item item = new Item(name, price, quantity, discount);
+            cart.add(item);
+            System.out.println("\n Item added: " + item.name + ", " + "Quantity: " + item.quantity + ", " + "Discount: " + item.discount + "%\n");
+        }
     }
 }
