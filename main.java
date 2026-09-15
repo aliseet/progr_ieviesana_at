@@ -20,6 +20,7 @@ public class ShoppingCartSystem {
             scanner.nextLine();
 
             switch (choice) {
+                case 1:
 
             }
         } while (choice != 6);
