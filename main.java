@@ -20,8 +20,12 @@ public class ShoppingCartSystem {
             scanner.nextLine();
 
             switch (choice) {
-                
+
             }
         } while (choice != 6);
+
+        static class Item {
+            
+        }
     }
 }
