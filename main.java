@@ -64,6 +64,9 @@ public class ShoppingCartSystem {
                     double totalPrice = calculateTotalPrice();
                     System.out.println("Total cart price: " + totalPrice + "$\n");
                     break;
+                case 6:
+                    System.out.println("Exiting...");
+                    break;
 
             }
         } while (choice != 6);
