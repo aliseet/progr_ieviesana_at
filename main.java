@@ -29,6 +29,13 @@ public class ShoppingCartSystem {
             double price;
             int quantity;
             double discount;
+
+            Item (String name, double price, int quantity, double discount) {
+                this.name = name;
+                this.price = price;
+                this.quantity = quantity;
+                this.discount = discount;
+            }
         }
     }
 }
