@@ -61,7 +61,9 @@ public class ShoppingCartSystem {
         }
 
         public static void viewCart() {
-            
+            if (cart.isEmpty()) {
+                System.out.println("No items added to cart.");
+            }
         }
     }
 }
