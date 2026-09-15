@@ -36,6 +36,10 @@ public class ShoppingCartSystem {
                 this.quantity = quantity;
                 this.discount = discount;
             }
+
+            public double getTotalPrice() {
+                return (price * quantity) * (1 - discount/100);
+            }
         }
     }
 }
