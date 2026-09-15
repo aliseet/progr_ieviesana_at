@@ -97,24 +97,28 @@ public class ShoppingCartSystem {
         }
     }
 
+    // Pievieno produktu ar noklusējuma daudzumu 1 un bez atlaides
     public static void addItem(String name, double price) {
         Item item = new Item(name, price, 1, 0);
         cart.add(item);
         System.out.println("\nItem added: " + item.name + ", " + "Quantity: " + item.quantity + ", " + "Discount: " + item.discount + "%\n");
     }
 
+    // Pievieno produktu ar mainīgu/izvēlētu daudzumu
     public static void addItem(String name, double price, int quantity) {
         Item item = new Item(name, price, quantity, 0);
         cart.add(item);
         System.out.println("\nItem added: " + item.name + ", " + "Quantity: " + item.quantity + ", " + "Discount: " + item.discount + "%\n");
     }
 
+    // Pievieno produktu ar izvēlētu daudzumu un atlaidi
     public static void addItem(String name, double price, int quantity, double discount) {
         Item item = new Item(name, price, quantity, discount);
         cart.add(item);
         System.out.println("\nItem added: " + item.name + ", " + "Quantity: " + item.quantity + ", " + "Discount: " + item.discount + "%\n");
     }
 
+    // Parāda produktus kuri tajā brīdī ir grozā
     public static void viewCart() {
         if (cart.isEmpty()) {
             System.out.println("No items added to cart.");
@@ -127,6 +131,7 @@ public class ShoppingCartSystem {
         }
     }
 
+    // Aprēķina galējo summu grozam
     public static double calculateTotalPrice() {
         double totalPrice = 0;
         for (Item item : cart) {
