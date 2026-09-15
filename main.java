@@ -67,6 +67,8 @@ public class ShoppingCartSystem {
                 case 6:
                     System.out.println("Exiting...");
                     break;
+                default:
+                    System.out.println("Invalid choice. Please try again.\n");
 
             }
         } while (choice != 6);
