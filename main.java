@@ -60,6 +60,10 @@ public class ShoppingCartSystem {
                 case 4:
                     viewCart();
                     break;
+                case 5:
+                    double totalPrice = calculateTotalPrice();
+                    System.out.println("Total cart price: " + totalPrice + "$\n");
+                    break;
 
             }
         } while (choice != 6);
