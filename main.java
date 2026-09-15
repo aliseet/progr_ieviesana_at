@@ -41,5 +41,13 @@ public class ShoppingCartSystem {
                 return (price * quantity) * (1 - discount/100);
             }
         }
+
+        public static void addItem(String name, double price) {
+            Item item = new Item(name, price, 1, 0);
+            cart.add(Item);
+            System.out.println("\nItem added: " + item.name + ", " + "Quantity: " + item.quantity + ", " + "Discount: " + item.discount + "%\n");
+        }
+
+        
     }
 }
