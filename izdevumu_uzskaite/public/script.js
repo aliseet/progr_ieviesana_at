@@ -34,4 +34,4 @@ form.addEventListener("submit", () => {
     totalSum.textContent = total.toFixed(2);
 
     form.reset();
-})
+});
